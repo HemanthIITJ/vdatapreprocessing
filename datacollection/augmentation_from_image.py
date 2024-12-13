@@ -74,9 +74,10 @@ def main():
 
     # Define a list of augmentations using torchvision.transforms
     augmentations = [
-        # transforms.RandomHorizontalFlip(),
-        # transforms.RandomRotation(10),
-        transforms.ColorJitter(brightness=0.7, contrast=0.5, saturation=0.4),
+        transforms.ColorJitter(
+            brightness=0.7, 
+            contrast=0.5, 
+            saturation=0.4),
     ]
 
     try:

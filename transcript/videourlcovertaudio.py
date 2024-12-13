@@ -40,5 +40,3 @@ def extract_audio(video_url: str, output_file: str) -> bool:
         print(f"An unexpected error occurred: {e}")
 
     return False
-
-

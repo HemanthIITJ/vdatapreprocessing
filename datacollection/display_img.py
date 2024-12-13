@@ -133,7 +133,7 @@ def display_image_with_plotly(
 
 if __name__ == "__main__":
     # Example usage:
-    image_path = r"C:\Users\hemanthk.LAP53-FJS.000\OneDrive\Pictures\Screenshots\comparisongemandamazon.png"  # Replace with your image path
+    image_path = r"" 
 
     try:
         display_image_with_plotly(image_path, width=800, add_axes=False)
