@@ -79,12 +79,12 @@ class AudioTranscriber:
                 torch_dtype=self.torch_dtype,
                 low_cpu_mem_usage=True,
                 use_safetensors=True,
-                cache_dir="/scratch/hemanth/cache",
+                cache_dir="./cache",
             )
             model.to(self.device)
             logging.info(f"Model loaded to device: {self.device}")
 
-            processor = AutoProcessor.from_pretrained(self.model_id,cache_dir="/scratch/hemanth/cache")
+            processor = AutoProcessor.from_pretrained(self.model_id,cache_dir="./cache")
             logging.info("Processor loaded")
 
             pipe = pipeline(

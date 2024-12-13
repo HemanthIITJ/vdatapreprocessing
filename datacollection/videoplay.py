@@ -208,7 +208,7 @@ if __name__ == '__main__':
             player = VideoPlayer(video_file)
             
             player.play()
-            time.sleep(30) # Keep playing for 5 seconds
+            time.sleep(5) # Keep playing for 5 seconds
             player.pause()
             time.sleep(2)
             player.resume()
@@ -218,7 +218,7 @@ if __name__ == '__main__':
             player.stop()
             
             player.play(loop=True)
-            time.sleep(5)
+            time.sleep(30)
             player.stop()
            
     except FileNotFoundError as e:
